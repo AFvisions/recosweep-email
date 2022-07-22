@@ -1,202 +1,552 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Message Subject or Title</title>
-    <style type="text/css">
-        #outlook a {
-            padding: 0;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Hind&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
 
-        body {
-            width: 100% !important;
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: dimgray;
         }
 
-        .ExternalClass {
-            width: 100%;
-        }
-
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-
-        #backgroundTable {
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
-            line-height: 100% !important;
-        }
-
-        img {
-            outline: none;
-            text-decoration: none;
-            -ms-interpolation-mode: bicubic;
-        }
-
-        a img {
-            border: none;
-        }
-
-        .image_fix {
-            display: block;
-        }
-
-        p {
-            margin: 1em 0;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: black !important;
-        }
-
-        h1 a,
-        h2 a,
-        h3 a,
-        h4 a,
-        h5 a,
-        h6 a {
-            color: blue !important;
-        }
-
-        h1 a:active,
-        h2 a:active,
-        h3 a:active,
-        h4 a:active,
-        h5 a:active,
-        h6 a:active {
-            color: red !important;
-        }
-
-        h1 a:visited,
-        h2 a:visited,
-        h3 a:visited,
-        h4 a:visited,
-        h5 a:visited,
-        h6 a:visited {
-            color: purple !important;
-        }
-
-        table td {
-            border-collapse: collapse;
-        }
-
-        table {
-            border-collapse: collapse;
+        table,
+        td {
             mso-table-lspace: 0pt;
             mso-table-rspace: 0pt;
         }
 
-        a {
-            color: orange;
+        img {
+            -ms-interpolation-mode: bicubic;
         }
 
-        @media only screen and (max-device-width: 480px) {
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
 
-            a[href^="tel"],
-            a[href^="sms"] {
-                text-decoration: none;
-                color: black;
-                /* or whatever your want */
-                pointer-events: none;
-                cursor: default;
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* MOBILE STYLES */
+        @media screen and (max-width: 640px) {
+            .img-max {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
             }
 
-            .mobile_link a[href^="tel"],
-            .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                /* or whatever your want */
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
-
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-            a[href^="tel"],
-            a[href^="sms"] {
-                text-decoration: none;
-                color: blue;
-                pointer-events: none;
-                cursor: default;
+            .max-width {
+                max-width: 100% !important;
             }
 
-            .mobile_link a[href^="tel"],
-            .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                pointer-events: auto;
-                cursor: default;
+            .mobile-wrapper {
+                width: 85% !important;
+                max-width: 85% !important;
             }
-        }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            /* Put your iPhone 4g styles in here */
-        }
+            /* .mobile-padding {
+                padding-left: 5% !important;
+                padding-right: 5% !important;
+            } */
 
-        @media only screen and (-webkit-device-pixel-ratio:.75) {
-            /* Put CSS for low density (ldpi) Android layouts in here */
-        }
 
-        @media only screen and (-webkit-device-pixel-ratio:1) {
-            /* Put CSS for medium density (mdpi) Android layouts in here */
-        }
 
-        @media only screen and (-webkit-device-pixel-ratio:1.5) {
-            /* Put CSS for high density (hdpi) Android layouts in here */
+            /* ANDROID CENTER FIX */
+            div[style*="margin: 16px 0;"] {
+                margin: 0 !important;
+            }
         }
     </style>
-    <!--[if IEMobile 7]>
-	<style type="text/css">
-		/* Targeting Windows Mobile */
-	</style>
-	<![endif]-->
-    <!--[if gte mso 9]>
-	<style>
-		/* Target Outlook 2007 and 2010 */
-	</style>
-	<![endif]-->
+
 </head>
 
-<body>
-    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="outline: white 1px dashed">
-        <tr>
-            <td>
-                <table cellpadding="0" cellspacing="0" border="0" align="center">
+<body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
+
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div class="litmus-builder-preview-text"
+        style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+        Because of your support!...</div>
+
+
+    <!-- HEADER -->
+
+
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr></tr>
+
+        <header>
+            <td align="center" height="100%" valign="top" width="100%" bgcolor="#FFE38C" style="padding: 0;">
+                <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+                <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="max-width:640px;">
                     <tr>
-                        <td width="200" valign="top">
-                            <imc src="">
+                        <td align="left" valign="top" style="padding: 16px;">
+                            <img src="https://imgur.com/6CEggku.png" alt="Insert alt text here" width="183" height=""
+                                border="0" style="display: block;">
                         </td>
-                        <td width="200" valign="top">Hi</td>
-                        <td width="200" valign="top">Okay</td>
+                        <td>
+                        <td align="right" valign="top" style="padding: 16px;">
+                            <img src="https://imgur.com/4xfPVyf.png" alt="Insert alt text here" width="24" height=""
+                                border="0" style="display: block;">
+                        </td>
+                        <td align="right" valign="top" style="padding: 16px;">
+                            <img src="https://imgur.com/eb4yuTy.png" alt="Insert alt text here" width="24" height=""
+                                border="0" style="display: block;">
+                        </td>
+                        <td align="right" valign="top" style="padding: 16px;">
+                            <img src="https://imgur.com/YczKcnN.png" alt="Insert alt text here" width="24" height=""
+                                border="0" style="display: block;">
+                        </td>
+
                     </tr>
                 </table>
-                <!-- <a href="http://htmlemailboilerplate.com" target="_blank" title="Styling Links"
-                    style="color: orange; text-decoration: none;">Coloring Links appropriately</a>
-                <img class="image_fix" src="full path to image" alt="Your alt text" title="Your title text" width="x"
-                    height="x" />
-                <span class="mobile_link">123-456-7890</span> -->
+                <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </td>
+        </header>
+        </tr>
+
+        <!-- Thank you! -->
+
+        <tr>
+            <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
+                class="mobile-padding">
+                <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+                <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="max-width:640px;">
+                    <tr>
+                        <td align="center" valign="top" style="padding: 16px 0 36px 0;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 25px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                            width="100%">
+                                            <tr>
+                                                <td align="left">
+                                                    <img src="https://imgur.com/jIvGOI8.png" alt="" width="107">
+                                                </td>
+                                                <td align="center">
+                                                    <h2
+                                                        style="font-family: 'Libre Baskerville', serif; font-size: 48px; color: #444444; margin: 0; padding-bottom: 10px;">
+                                                        Thank you!</h2>
+                                                    <p
+                                                        style="font-family: 'Hind', sans-serif; color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
+                                                        For Your Purchase
+                                                    </p>
+                                                </td>
+                                                <td align="right">
+                                                    <img src="https://imgur.com/GONkeNW.png" alt="" width="108">
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                            <td align="center" style="padding: 30px 0 0 0;">
+                                                <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="center" style="border-radius: 26px;"
+                                                            bgcolor="#75b6c9">
+                                                            <a href="http://litmus.com" target="_blank"
+                                                                style="font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read
+                                                                more &rarr;</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr> -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
             </td>
         </tr>
-    </table>
+
+        <!-- RECEIPT -->
+
+        <tr>
+            <td>
+                <table align="center" width="100%" style="max-width: 500px">
+                    <tr>
+                        <td style="border-top: 2px dashed lightgray;">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" style="padding-top: 16px;">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 500px">
+                    <tr>
+                        <td width="50%" align="left" bgcolor="#eeeeee"
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
+                            ITEM</td>
+                        <td width="25%" align="left" bgcolor="#eeeeee"
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
+                            QTY</td>
+                        <td width="25%" align="left" bgcolor="#eeeeee"
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
+                            PRICE</td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            Bronze Package</td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            1</td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            $250</td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            3" Vinyl Sticker</td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            2</td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            $30</td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                        </td>
+
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            Taxes
+                        </td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            $0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                        </td>
+
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
+                            TOTAL
+                        </td>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px;">
+                            $310
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 10px 10px 0 10px;">
+                            Mastercard ending in (7070)</td>
+                    </tr>
+                    <tr>
+                        <td align="left" bgcolor=""
+                            style="font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 0 0 0 10px;">
+                            Purchased on 12/28/22
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- BUTTON: DOWNLOAD RECEIPT -->
+        <tr>
+            <td align="center" style="padding-top: 16px">
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td>
+                            <div>
+                                <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:36px;v-text-anchor:middle;width:152px;" arcsize="12%" strokecolor="#1e3650" fill="t">
+                              <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Download Receipt</center>
+                            </v:roundrect>
+                          <![endif]--><a href="http://www.afvisions.com"
+                                    style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:152px;-webkit-text-size-adjust:none;mso-hide:all;">Download
+                                    Receipt</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table align="center" width="100%" style="max-width: 500px">
+                    <tr>
+                        <td style="border-bottom: 2px dashed lightgray; padding: 16px 0 0 0;">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- With Your Support -->
+
+        <tr>
+            <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
+                class="mobile-padding">
+                <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+                <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="max-width:640px;">
+                    <tr>
+                        <td align="center" style="padding: 16px 0 0 0;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" bgcolor="" style="border-radius: 0; padding: 16px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                            width="100%">
+                                            <tr>
+
+                                                <td align="center" style="font-family: 'Hind', serif;">
+                                                    <h2 style="font-size: 16px; color: #5d774A; margin: 0;">
+                                                        Because of Your Support...</h2>
+
+                                                </td>
+
+                                            </tr>
+                                            <!-- <tr>
+                                            <td align="center" style="padding: 30px 0 0 0;">
+                                                <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="center" style="border-radius: 26px;"
+                                                            bgcolor="#75b6c9">
+                                                            <a href="http://litmus.com" target="_blank"
+                                                                style="font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read
+                                                                more &rarr;</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr> -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </td>
+        </tr>
+
+
+        <!-- We Card 1 -->
+
+        <tr>
+            <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
+                class="mobile-padding">
+                <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+                <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="max-width:640px;">
+                    <tr>
+                        <td align="center" valign="top"
+                            style="padding: 16px 0 0 0; font-family: Georgia, 'Times New Roman', Times, serif;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                            width="100%">
+                                            <tr>
+
+                                                <td align="center">
+                                                    <h2
+                                                        style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
+                                                        We Continue To Search.</h2>
+                                                    <p
+                                                        style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
+                                                        Lorem ipsum
+                                                        dolor sit amet
+                                                        consectetur adipisicing elit. Aut autem
+                                                        error accusantium tenetur molestiae nisi adipisci rem est
+                                                        distinctio
+                                                        quod.</p>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 16px;">
+                                                    <img src="https://imgur.com/8cduQOR.png"
+                                                        alt="a young man observing a mountain with binoculars" height=""
+                                                        width="608px">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <div>
+                                                        <!--[if mso]>
+                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:37px;v-text-anchor:middle;width:129px;" arcsize="11%" strokecolor="#1e3650" fill="t">
+                                                  <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+                                                  <w:anchorlock/>
+                                                  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Find Out More</center>
+                                                </v:roundrect>
+                                              <![endif]--><a href="http://www.afvisions.com"
+                                                            style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:129px;-webkit-text-size-adjust:none;mso-hide:all;">Find
+                                                            Out More</a>
+                                                    </div>
+                                            </tr>
+                                            <!-- <tr>
+                                            <td align="center" style="padding: 30px 0 0 0;">
+                                                <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="center" style="border-radius: 26px;"
+                                                            bgcolor="#75b6c9">
+                                                            <a href="http://litmus.com" target="_blank"
+                                                                style="font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read
+                                                                more &rarr;</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr> -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <tr>
+                <td align="center" height="100%" valign="top" width="100%" bgcolor="#FFE38C"
+                    style="padding: 16px 0 40px 16px;">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+                    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                        style="max-width:640px;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/4xfPVyf.png" alt="Insert alt text here" width="24" height=""
+                                    border="0" style="display: block;">
+                            </td>
+                            <td align="center" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/eb4yuTy.png" alt="Insert alt text here" width="24" height=""
+                                    border="0" style="display: block;">
+                            </td>
+                            <td align="center" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/YczKcnN.png" alt="Insert alt text here" width="24" height=""
+                                    border="0" style="display: block;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top"
+                                style="padding: 0; font-family: Georgia, 'Times New Roman', Times, serif; color: #999999;">
+                                <p style="font-size: 14px; line-height: 20px;">
+                                    AFvisions <br>
+                                    Lizard People Drive <br> Austin, TX 77777
+
+                                    <br><br>
+
+                                    <a href="http://litmus.com" style="color: #999999;" target="_blank">View
+                                        Online</a>
+                                    &nbsp; &bull; &nbsp;
+                                    <a href="http://litmus.com" style="color: #999999;" target="_blank">Unsubscribe</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+        </footer>
+
 </body>
 
 </html>
