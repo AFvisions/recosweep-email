@@ -1,578 +1,531 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-    xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
     <meta name="x-apple-disable-message-reformatting">
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-
-    <title></title>
-
-    <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
-
-    <style type="text/css">
+    <title>Email title</title>
+    <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+    <style>
         :root {
             color-scheme: light dark;
             supported-color-schemes: light dark;
         }
 
-        /* CLIENT-SPECIFIC STYLES */
-        body,
-        table,
-        td,
-        a {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #ffffff;
+            padding-bottom: 40px;
         }
 
-        /* Prevent WebKit and Windows mobile changing default text sizes */
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 640px;
+            background-color: #FFF1CA;
+            border-spacing: 0;
+            font-family: serif;
+            color: #1e3650;
         }
-
-        /* Remove spacing between tables in Outlook 2007 and up */
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-
-        /* Allow smoother rendering of resized image in Internet Explorer */
-
-        /* RESET STYLES */
-        img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
-            outline: none;
-            text-decoration: none;
-        }
-
-        table {
-            border-collapse: collapse !important;
-        }
-
-        body {
-            height: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            width: 100% !important;
-        }
-
-        /* iOS BLUE LINKS */
-        a[x-apple-data-detectors] {
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        }
-
-        [class="100p"] {
-            width: 100% !important;
-            height: auto !important;
-        }
-
-        /* MOBILE STYLES */
-        @media screen and (max-width: 640px) {
-
-            /* ALLOWS FOR FLUID TABLES */
-            .wrapper {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-
-            /* ADJUSTS LAYOUT OF LOGO IMAGE */
-            .logo img {
-                margin: 0 auto !important;
-            }
-
-            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
-            .mobile-hide {
-                display: none !important;
-            }
-
-            .img-max {
-                max-width: 100% !important;
-                width: 100% !important;
-                height: auto !important;
-            }
-
-            /* FULL-WIDTH TABLES */
-            .responsive-table {
-                width: 100% !important;
-            }
-
-            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
-            .padding {
-                padding: 10px 5% 15px 5% !important;
-            }
-
-            .padding-meta {
-                padding: 30px 5% 0px 5% !important;
-                text-align: center;
-            }
-
-            .no-padding {
-                padding: 0 !important;
-            }
-
-            .section-padding {
-                padding: 50px 15px 50px 15px !important;
-            }
-
-            /* ADJUST BUTTONS ON MOBILE */
-            .mobile-button-container {
-                margin: 0 auto;
-                width: 100% !important;
-            }
-
-            .mobile-button {
-                padding: 15px !important;
-                border: 0 !important;
-                font-size: 16px !important;
-                display: block !important;
-            }
-
-        }
-
-        /* ANDROID CENTER FIX */
-        div[style*="margin: 16px 0;"] {
-            margin: 0 !important;
-        }
-
-        /* @media only screen and (max-width: 640px) {
-
-            .column,
-            .gutter {
-                display: block !important;
-            }
-
-            .column {
-                width: 450px !important;
-            }
-
-            .column img {
-                width: 450px;
-            }
-        } */
-
-        */
     </style>
 </head>
 
-<body id="body" style="margin: 0 !important; padding: 0 !important; background-color: #ffffff;">
-    <!-- Wrapper -->
-    <div role="article" aria-roledescription="email" aria-label="email name" lang="en" dir="ltr"
-        style="font-size:medium; font-size:max(16px, 1rem)">
-        <!-- Container (can also set text styles here)-->
-        <div
-            style="color:#ffffff; font-family: serif; line-height: 1; margin: 1rem auto; max-width: 640px; padding: 0 16px;">
+<body class="body">
+
+    <center class="wrapper">
+        <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+
+        <table class="main" align="center">
+            <!-- NAVBAR -->
+            <tr>
+                <td>
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table width="100%">
+
+                        <tr>
+                            <td class="logo" align="left" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/6CEggku.png" alt="RecoSweep logo" width="183" height=""
+                                    border="0" style="display: block;">
+                            </td>
+                            <td class="facebook" align="right" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/4xfPVyf.png" alt="facebook" width="24" height="" border="0"
+                                    style="display: block;">
+                            </td>
+                            <td class="twitter" align="right" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/eb4yuTy.png" alt="twitter" width="24" height="" border="0"
+                                    style="display: block;">
+                            </td>
+                            <td class="instagram" align="right" valign="top" style="padding: 16px;">
+                                <img src="https://imgur.com/YczKcnN.png" alt="instagram" width="24" height="" border="0"
+                                    style="display: block;">
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffffff" style="padding-top: 16px"></td>
+            </tr>
+
+            <!-- Thank You -->
+
+            <tr>
+                <td>
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: left; padding: 16px 0 16px 16px">
+                                <img src="https://imgur.com/jIvGOI8.png" alt="" width="107">
+                            </td>
+                            <td style="text-align: center">
+                                <h2
+                                    style="font-family: 'Libre Baskerville', serif; font-size: 48px; color: #444444; margin: 0; padding-bottom: 10px;">
+                                    Thank you!</h2>
+                                <p margin="0"
+                                    style="font-family: sans-serif; color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
+                                    For Your Purchase
+                                </p>
+                            </td>
+                            <td style="text-align: right; padding: 16px 16px 16px 0">
+                                <img src="https://imgur.com/GONkeNW.png" alt="" width="108">
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+
+                </td>
+            </tr>
+
+            <!-- RECEIPT -->
+
+            <tr>
+                <td style="padding-top: 16px;" bgcolor="white">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+                    <table align="center" width="100%" style="max-width: 500px">
+                        <tr>
+                            <td style="border-top: 2px dashed lightgray;">
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" style="padding-top: 16px;" bgcolor="white">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table role="presentation" width="100%"
+                        style="max-width: 500px; font-family: sans-serif; font-size 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px; color: #444444">
+                        <tr>
+                            <td width="50%" align="left" bgcolor="#eeeeee"
+                                style="font-family: sans-serif; font-weight: 800;">
+                                ITEM</td>
+                            <td width="25%" align="left" bgcolor="#eeeeee"
+                                style="font-family: sans-serif; font-weight: 800;">
+                                QTY</td>
+                            <td width="25%" align="left" bgcolor="#eeeeee"
+                                style="font-family: sans-serif; font-weight: 800;">
+                                PRICE</td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                Bronze Package</td>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                1</td>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                $250</td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                3" Vinyl Sticker</td>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                2</td>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                $30</td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                            </td>
+
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                Taxes
+                            </td>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                                $0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
+                            </td>
+
+                            <td align="left"
+                                style="font-family: sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
+                                TOTAL
+                            </td>
+                            <td align="left">
+                                $310
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left"
+                                style="font-family: sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 10px 10px 0 10px;">
+                                Mastercard ending in (7070)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left"
+                                style="font-family: sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 0 0 0 10px;">
+                                Purchased on 12/28/22
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+
+            <!-- BUTTON (Download Receipt)-->
+
+            <tr>
+                <td align="center" style="padding: 16px 0 0 0" bgcolor="#ffffff">
+                    <div>
+                        <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:36px;v-text-anchor:middle;width:152px;" arcsize="12%" strokecolor="#1e3650" fill="t">
+                              <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Download Receipt</center>
+                            </v:roundrect>
+                          <![endif]--><a href="http://www.afvisions.com"
+                            style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:152px;-webkit-text-size-adjust:none;mso-hide:all;">Download
+                            Receipt</a>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="padding: 16px 0 16px 0;" bgcolor="white">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+                    <table align="center" width="100%" style="max-width: 500px">
+                        <tr>
+                            <td style="border-top: 2px dashed lightgray;">
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#ffffff" style="padding: 16px 0 16px 0; font-family: serif; color: #012105">
+                    <p>Because of Your Support...</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#ffffff" style="padding-top: 16px"></td>
+            </tr>
+
+            <!-- We Card 1 -->
+
+            <tr>
+                <td>
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="16" cellpadding="0" max-width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table width="100%">
+                        <tr>
+
+                            <td align="center">
+                                <h2
+                                    style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
+                                    We Continue To Search.</h2>
+
+                                <p margin="0"
+                                    style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
+                                    Our non-profit requires donations like yours
+                                    to
+                                    keep
+                                    our team in the field which allows us to provide
+                                    closure
+                                    to hundreds of families every year.
+                                </p>
+                            </td>
+                        </tr>
 
 
 
-            <table cellpadding="0" cellspacing="0" border="0"
-                style="border:1px solid #eeeeee; width: 100%; max-width:640px; border-collapse:collapse; border-spacing:0; text-align:left;"
-                role="presentation">
+
+                        <tr>
+                            <td align="center" style="padding: 16px;">
+                                <img src="https://imgur.com/8cduQOR.png"
+                                    alt="a young man searching a mountainous landscape with binoculars"
+                                    style="width: 100%; max-width: 608px" width="608">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 16px">
+
+
+                                <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:36px;v-text-anchor:middle;width:129px;" arcsize="11%" strokecolor="#1e3650" fill="t">
+    <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+    <w:anchorlock/>
+    <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Find Out More</center>
+  </v:roundrect>
+<![endif]-->
+                                <div>
+                                    <a href="http://www.afvisions.com"
+                                        style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:129px;-webkit-text-size-adjust:none;mso-hide:all;">Find
+                                        Out More</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#ffffff" style="padding-top: 16px"></td>
+            </tr>
+
+            <!-- We Card 2 -->
+
+
+            <tr>
+                <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="16" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+
+                            <td align="center">
+                                <h2
+                                    style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
+                                    We Advance Our Tech.</h2>
+                                <p style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
+                                    Upgrading our tracking technology allows for
+                                    smarter
+                                    tools to find lost people faster and more
+                                    efficiently.</p>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 16px;">
+                                <img src="https://imgur.com/L2VQjUf.png"
+                                    alt="A man in a green forest holds his phone seeking paths to follow with a discerning gaze."
+                                    style="width:100%; max-width:462px" width="462">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 16px">
+
+                                <!--[if mso]>
+                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:37px;v-text-anchor:middle;width:136px;" arcsize="11%" strokecolor="#1e3650" fill="t">
+                                                                  <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+                                                                  <w:anchorlock/>
+                                                                  <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">About Our Tech</center>
+                                                                </v:roundrect>
+                                                              <![endif]-->
+                                <div><a href="http://www.afvisions.com"
+                                        style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:136px;-webkit-text-size-adjust:none;mso-hide:all;">About
+                                        Our Tech</a>
+                                </div>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#ffffff" style="padding-top: 16px"></td>
+            </tr>
+
+
+            <!-- We Card 3 -->
+
+
+            <tr>
+                <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
+                    <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="16" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+
+                            <td align="center">
+                                <h2
+                                    style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
+                                    We Reward Volunteers.</h2>
+                                <p style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
+                                    Those who volunteer with us whether in the
+                                    office or
+                                    out in the field receive rewards based on
+                                    their
+                                    time
+                                    spent. </p>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 16px;">
+                                <img src="https://imgur.com/NUoiviU.png"
+                                    alt="Two women hold hands and run joyfully along a sandy warm beach toward the ocean."
+                                    style="width:100%; max-width: 408px" width="408">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 16px">
+
+                                <!--[if mso]>
+                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:37px;v-text-anchor:middle;width:104px;" arcsize="11%" strokecolor="#1e3650" fill="t">
+                                                                  <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
+                                                                  <w:anchorlock/>
+                                                                  <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">Volunteer</center>
+                                                                </v:roundrect>
+                                                              <![endif]-->
+                                <div><a href="http://www.afvisions.com"
+                                        style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:14px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:104px;-webkit-text-size-adjust:none;mso-hide:all;">Volunteer</a>
+                                </div>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#ffffff" style="padding-top: 16px"></td>
+            </tr>
+
+            <!-- FOOTER -->
+
+            <footer>
                 <tr>
-                    <td>
-
-                        <!-- NAVBAR -->
-
-                        <table class="navbar" role="presentation"
-                            style="width:100%;border:0;border-collapse:collapse;border-spacing:0;">
+                    <td bgcolor="#FFE38C">
+                        <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                        <table align="center" width="100%" style="max-width:640px;">
                             <tr>
-                                <td class="logo" align="left" valign="top" style="padding: 16px;">
-                                    <img src="https://imgur.com/6CEggku.png" alt="RecoSweep logo" width="183" height=""
+                                <td align="center" style="padding: 16px;">
+                                    <img src="https://imgur.com/4xfPVyf.png" alt="Insert alt text here" max-width="24px"
                                         border="0" style="display: block;">
                                 </td>
-                                <td>
-                                <td class="facebook" align="right" valign="top" style="padding: 16px;">
-                                    <img src="https://imgur.com/4xfPVyf.png" alt="facebook" width="24" height=""
+                                <td align="center" style="padding: 16px;">
+                                    <img src="https://imgur.com/eb4yuTy.png" alt="Insert alt text here" max-width="24px"
                                         border="0" style="display: block;">
                                 </td>
-                                <td class="twitter" align="right" valign="top" style="padding: 16px;">
-                                    <img src="https://imgur.com/eb4yuTy.png" alt="twitter" width="24" height=""
-                                        border="0" style="display: block;">
-                                </td>
-                                <td class="instagram" align="right" valign="top" style="padding: 16px;">
-                                    <img src="https://imgur.com/YczKcnN.png" alt="instagram" width="24" height=""
+                                <td align="center" style="padding: 16px;">
+                                    <img src="https://imgur.com/YczKcnN.png" alt="Insert alt text here" max-width="24px"
                                         border="0" style="display: block;">
                                 </td>
                             </tr>
-                        </table>
+                            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
 
-                        <!-- HEADER -->
-
-                        <table class="thankyou" role="presentation"
-                            style="width:640px;border:0;border-collapse;border-spacing:0">
-                            <tr>
-                                <td align="center" valign="top" style="padding: 16px 0 36px 0;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                                        class="wrapper">
-                                        <tr>
-                                            <td align="center" bgcolor="#fff1ca"
-                                                style="border-radius: 0; padding: 25px;">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                                    width="100%" class="wrapper">
-                                                    <tr>
-                                                        <td align="left">
-                                                            <img src="https://imgur.com/jIvGOI8.png" alt="" width="107">
-                                                        </td>
-                                                        <td align="center">
-                                                            <h2
-                                                                style="font-family: 'Libre Baskerville', serif; font-size: 48px; color: #444444; margin: 0; padding-bottom: 10px;">
-                                                                Thank you!</h2>
-                                                            <p margin="0"
-                                                                style="font-family: sans-serif; color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
-                                                                For Your Purchase
-                                                            </p>
-                                                        </td>
-                                                        <td align="right">
-                                                            <img src="https://imgur.com/GONkeNW.png" alt="" width="108">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </td> <!-- RECEIPT -->
-                </tr>
-                <tr>
-                    <td>
-                        <table class="dashed-spacer" align="center" width="100%" style="max-width: 500px">
-                            <tr>
-                                <td style="border-top: 2px dashed lightgray;">
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td align="center" style="padding-top: 16px;">
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%"
-                            style="max-width: 500px; font-family: sans-serif; font-size 16px; font-weight: 400; line-height: 24px; padding: 8px 8px 0 8px; color: #444444">
-                            <tr>
-                                <td width="50%" align="left" bgcolor="#eeeeee"
-                                    style="font-family: sans-serif; font-weight: 800;">
-                                    ITEM</td>
-                                <td width="25%" align="left" bgcolor="#eeeeee"
-                                    style="font-family: sans-serif; font-weight: 800;">
-                                    QTY</td>
-                                <td width="25%" align="left" bgcolor="#eeeeee"
-                                    style="font-family: sans-serif; font-weight: 800;">
-                                    PRICE</td>
-                            </tr>
-                            <tr>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    Bronze Package</td>
-                                <td align=" left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    1</td>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    $250</td>
-                            </tr>
-                            <tr>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    3" Vinyl Sticker</td>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    2</td>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    $30</td>
-                            </tr>
-                            <tr>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                </td>
-
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    Taxes
-                                </td>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                    $0
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left" style="font-family: sans-serif; padding: 8px 8px 0 8px;">
-                                </td>
-
-                                <td align="left"
-                                    style="font-family: sans-serif; font-size: 16px; font-weight: 800; line-height: 24px; padding: 8px 8px 0 8px;">
-                                    TOTAL
-                                </td>
-                                <td align="left">
-                                    $310
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left"
-                                    style="font-family: sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 10px 10px 0 10px;">
-                                    Mastercard ending in (7070)</td>
-                            </tr>
-                            <tr>
-                                <td align="left"
-                                    style="font-family: sans-serif; font-size: 16px; font-weight: 400; color:#999999; line-height: 24px; padding: 0 0 0 10px;">
-                                    Purchased on 12/28/22
-                                </td>
-                            </tr>
-
-                            <!-- Download Button-->
-
-                            <tr>
-                                <td>
-                                    <div>
-                                        <!--[if mso]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:36px;v-text-anchor:middle;width:152px;" arcsize="12%" strokecolor="#1e3650" fill="t">
-                                  <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
-                                  <w:anchorlock/>
-                                  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Download Receipt</center>
-                                </v:roundrect>
-                              <![endif]--><a href="http://www.afvisions.com"
-                                            style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:152px;-webkit-text-size-adjust:none;mso-hide:all;">Download
-                                            Receipt</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <table class="dashed-spacer" align="center" width="100%" style="max-width: 500px">
-                            <tr>
-                                <td style="border-bottom: 2px dashed lightgray; padding: 16px 0 0 0;">
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <!-- We Card 1 -->
-
-                <tr>
-                    <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
-                        class="mobile-padding">
-                        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
-                            width="100%" style="max-width:640px;">
-                            <tr>
-                                <td align="center" valign="top"
-                                    style="padding: 16px 0 0 0; font-family: Georgia, 'Times New Roman', Times, serif;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                        <tr>
-                                            <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                                    width="100%">
-                                                    <tr>
-
-                                                        <td align="center">
-                                                            <h2
-                                                                style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
-                                                                We Continue To Search.</h2>
-                                                            <p
-                                                                style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
-                                                                Our non-profit requires donations like yours
-                                                                to
-                                                                keep
-                                                                our team in the field allowing us to supply
-                                                                closure
-                                                                to hundreds of families a year.</p>
-
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 16px;">
-                                                            <img src="https://imgur.com/8cduQOR.png"
-                                                                alt="a young man observing a mountain with binoculars"
-                                                                height="" width="608px">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">
-                                                            <div>
-                                                                <a href="http://www.afvisions.com"
-                                                                    style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:129px;-webkit-text-size-adjust:none;mso-hide:all;">Find
-                                                                    Out More</a>
-                                                            </div>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </td>
-                </tr>
-
-                <!-- We Card 2 -->
-
-                <tr>
-                    <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
-                        class="mobile-padding">
-                        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
-                            width="100%" style="max-width:640px;">
-                            <tr>
-                                <td align="center" valign="top"
-                                    style="padding: 16px 0 0 0; font-family: Georgia, 'Times New Roman', Times, serif;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                        <tr>
-                                            <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                                    width="100%">
-                                                    <tr>
-
-                                                        <td align="center">
-                                                            <h2
-                                                                style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
-                                                                We Advance Our Tech.</h2>
-                                                            <p
-                                                                style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
-                                                                Upgrading our tracking technology allows for
-                                                                smarter
-                                                                tools to find lost people faster and more
-                                                                efficiently.</p>
-
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 16px;">
-                                                            <img src="https://imgur.com/L2VQjUf.png"
-                                                                alt="A man in a green forest holds his phone seeking paths to follow with a discerning gaze."
-                                                                height="" width="608px">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">
-                                                            <div>
-                                                                <!--[if mso]>
-                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:37px;v-text-anchor:middle;width:136px;" arcsize="11%" strokecolor="#1e3650" fill="t">
-                                                                      <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
-                                                                      <w:anchorlock/>
-                                                                      <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">About Our Tech</center>
-                                                                    </v:roundrect>
-                                                                  <![endif]--><a href="http://www.afvisions.com"
-                                                                    style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:136px;-webkit-text-size-adjust:none;mso-hide:all;">About
-                                                                    Our Tech</a>
-                                                            </div>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <!-- We Card 3 -->
-
-                <tr>
-                    <td align="center" height="100%" valign="top" width="100%" bgcolor="" style="padding: 0;"
-                        class="mobile-padding">
-                        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
-                            width="100%" style="max-width:640px;">
-                            <tr>
-                                <td align="center" valign="top"
-                                    style="padding: 16px 0 0 0; font-family: Georgia, 'Times New Roman', Times, serif;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                        <tr>
-                                            <td align="center" bgcolor="#fff1ca" style="border-radius: 0; padding: 0;">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                                    width="100%">
-                                                    <tr>
-
-                                                        <td align="center">
-                                                            <h2
-                                                                style="font-family: 'Fira Sans', sans-serif; font-size: 48px; color: #444444; margin: 0; padding: 16px;">
-                                                                We Reward Volunteers.</h2>
-                                                            <p
-                                                                style="font-family: 'Hind', sans-serif; font-size: 16px; padding: 0 16px;">
-                                                                Those who volunteer with us whether in the
-                                                                office or
-                                                                out in the field receive rewards based on
-                                                                their
-                                                                time
-                                                                spent. </p>
-
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 16px;">
-                                                            <img src="https://imgur.com/NUoiviU.png"
-                                                                alt="Two women hold hands and run joyfully along a sandy warm beach toward the ocean."
-                                                                height="" width="608px">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center">
-                                                            <div>
-                                                                <!--[if mso]>
-                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.afvisions.com" style="height:37px;v-text-anchor:middle;width:104px;" arcsize="11%" strokecolor="#1e3650" fill="t">
-                                                                      <v:fill type="tile" src="https://imgur.com/9OSYB5l.gif" color="#556270" />
-                                                                      <w:anchorlock/>
-                                                                      <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Volunteer</center>
-                                                                    </v:roundrect>
-                                                                  <![endif]--><a href="http://www.afvisions.com"
-                                                                    style="background-color:#556270;background-image:url(https://imgur.com/9OSYB5l.gif);border:1px solid #1e3650;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:37px;text-align:center;text-decoration:none;width:104px;-webkit-text-size-adjust:none;mso-hide:all;">Volunteer</a>
-                                                            </div>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <!-- FOOTER -->
-
-                <footer>
-                    <tr>
-                        <td class align="center" height="100%" valign="top" width="100%" bgcolor="#FFE38C"
-                            style="padding: 16px 0 40px 16px;">
-                            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
-                                width="100%" style="max-width:640px;">
+                            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+            <tr>
+            <td align="center" valign="top" width="640">
+            <![endif]-->
+                            <table width="100%">
                                 <tr>
-                                    <td align="center" valign="top" style="padding: 16px;">
-                                        <img src="https://imgur.com/4xfPVyf.png" alt="Insert alt text here" width="24"
-                                            height="" border="0" style="display: block;">
-                                    </td>
-                                    <td align="center" valign="top" style="padding: 16px;">
-                                        <img src="https://imgur.com/eb4yuTy.png" alt="Insert alt text here" width="24"
-                                            height="" border="0" style="display: block;">
-                                    </td>
-                                    <td align="center" valign="top" style="padding: 16px;">
-                                        <img src="https://imgur.com/YczKcnN.png" alt="Insert alt text here" width="24"
-                                            height="" border="0" style="display: block;">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" valign="top"
+                                    <td align="center"
                                         style="padding: 0; font-family: Georgia, 'Times New Roman', Times, serif; color: #999999;">
                                         <p style="font-size: 14px; line-height: 20px;">
                                             AFvisions <br>
                                             Lizard People Drive <br> Austin, TX 77777
 
-                                            <br><br>
+
 
                                             <a href="http://litmus.com" style="color: #999999;" target="_blank">View
                                                 Online</a>
@@ -583,11 +536,25 @@
                                     </td>
                                 </tr>
                             </table>
-                        </td>
-                    </tr>
-                </footer>
-        </div>
+                            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                        </table>
+                    </td>
+                </tr>
+            </footer>
 
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+    </center>
 </body>
 
 </html>
